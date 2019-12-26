@@ -55,7 +55,46 @@ body {
 }
 
 /* MAIN */
+
 /* SECTION 1 */
+
+.section1 {
+    background-color: var(--Gris5);
+    height: 120px;
+    padding: var(--Espacio);
+    margin: var(--Espacio) 0;
+    display: grid;
+    align-content: center;
+    overflow: auto;
+    grid-template-columns: repeat(10, minmax(75px, 85px));
+    grid-template-rows: 100px;
+    grid-gap: var(--Espacio);
+}
+
+.section1 .item {
+    background-color: var(--Gris3);
+    display: grid;
+    justify-items: center;
+    padding: var(--Espacio);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: 1fr;
+}
+.section1 .item .logo {
+    grid-row: 1 / span 2;
+    border-radius: 50%;
+    background-color: var(--Gris1);
+    align-self: center;
+}
+.section1 .item .buttom {
+    grid-row: 3 / span 1;
+    border-radius: 10px;
+    width: 50px;
+    height: 15px;
+    background-color: var(--Gris1);
+    align-self: center;
+}
+
+/* SECTION 2 */
 
 .section2 {
     display: grid;
